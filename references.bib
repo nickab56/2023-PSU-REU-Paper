@@ -1,0 +1,507 @@
+@inproceedings{bevendorff-etal-2019-heuristic,
+    title = "Heuristic Authorship Obfuscation",
+    author = "Bevendorff, Janek  and
+      Potthast, Martin  and
+      Hagen, Matthias  and
+      Stein, Benno",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P19-1104",
+    doi = "10.18653/v1/P19-1104",
+    pages = "1098--1108",
+    abstract = "Authorship verification is the task of determining whether two texts were written by the same author. We deal with the adversary task, called authorship obfuscation: preventing verification by altering a to-be-obfuscated text. Our new obfuscation approach (1) models writing style difference as the Jensen-Shannon distance between the character n-gram distributions of texts, and (2) manipulates an author{'}s subconsciously encoded writing style in a sophisticated manner using heuristic search. To obfuscate, we analyze the huge space of textual variants for a paraphrased version of the to-be-obfuscated text that has a sufficient Jensen-Shannon distance at minimal costs in terms of text quality. We analyze, quantify, and illustrate the rationale of this approach, define paraphrasing operators, derive obfuscation thresholds, and develop an effective obfuscation framework. Our authorship obfuscation approach defeats state-of-the-art verification approaches, including unmasking and compression models, while keeping text changes at a minimum.",
+}
+
+@article{Frank2008,
+    author = "Frank, A. F. and Jaeger, T.",
+    title = "Speaking Rationally: Uniform Information Density as an Optimal
+           Strategy for Language Production",
+    journal = "Proceedings of the Annual Meeting of the Cognitive Science Society, 30",
+    year = 2008
+}
+@ARTICLE{Grondahl2019-iv,
+  title         = "Effective writing style imitation via combinatorial
+                   paraphrasing",
+  author        = "Gr{\"o}ndahl, Tommi and Asokan, N",
+  abstract      = "Stylometry can be used to profile or deanonymize authors
+                   against their will based on writing style. Style transfer
+                   provides a defence. Current techniques typically use either
+                   encoder-decoder architectures or rule-based algorithms.
+                   Crucially, style transfer must reliably retain original
+                   semantic content to be actually deployable. We conduct a
+                   multifaceted evaluation of three state-of-the-art
+                   encoder-decoder style transfer techniques, and show that all
+                   fail at semantic retainment. In particular, they do not
+                   produce appropriate paraphrases, but only retain original
+                   content in the trivial case of exactly reproducing the text.
+                   To mitigate this problem we propose ParChoice: a technique
+                   based on the combinatorial application of multiple
+                   paraphrasing algorithms. ParChoice strongly outperforms the
+                   encoder-decoder baselines in semantic retainment.
+                   Additionally, compared to baselines that achieve
+                   non-negligible semantic retainment, ParChoice has superior
+                   style transfer performance. We also apply ParChoice to
+                   multi-author style imitation (not considered by prior work),
+                   where we achieve up to 75\% imitation success among five
+                   authors. Furthermore, when compared to two state-of-the-art
+                   rule-based style transfer techniques, ParChoice has markedly
+                   better semantic retainment. Combining ParChoice with the
+                   best performing rule-based baseline (Mutant-X) also reaches
+                   the highest style transfer success on the Brennan-Greenstadt
+                   and Extended-Brennan-Greenstadt corpora, with much less
+                   impact on original meaning than when using the rule-based
+                   baseline techniques alone. Finally, we highlight a critical
+                   problem that afflicts all current style transfer techniques:
+                   the adversary can use the same technique for thwarting style
+                   transfer via adversarial training. We show that adding
+                   randomness to style transfer helps to mitigate the
+                   effectiveness of adversarial training.",
+  month         =  may,
+  year          =  2019,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "1905.13464"
+}
+@ARTICLE{Karadjov2017-el,
+  title         = "The Case for Being Average: A Mediocrity Approach to Style
+                   Masking and Author Obfuscation",
+  author        = "Karadjov, Georgi and Mihaylova, Tsvetomila and Kiprov, Yasen
+                   and Georgiev, Georgi and Koychev, Ivan and Nakov, Preslav",
+  abstract      = "Users posting online expect to remain anonymous unless they
+                   have logged in, which is often needed for them to be able to
+                   discuss freely on various topics. Preserving the anonymity
+                   of a text's writer can be also important in some other
+                   contexts, e.g., in the case of witness protection or
+                   anonymity programs. However, each person has his/her own
+                   style of writing, which can be analyzed using stylometry,
+                   and as a result, the true identity of the author of a piece
+                   of text can be revealed even if s/he has tried to hide it.
+                   Thus, it could be helpful to design automatic tools that can
+                   help a person obfuscate his/her identity when writing text.
+                   In particular, here we propose an approach that changes the
+                   text, so that it is pushed towards average values for some
+                   general stylometric characteristics, thus making the use of
+                   these characteristics less discriminative. The approach
+                   consists of three main steps: first, we calculate the values
+                   for some popular stylometric metrics that can indicate
+                   authorship; then we apply various transformations to the
+                   text, so that these metrics are adjusted towards the average
+                   level, while preserving the semantics and the soundness of
+                   the text; and finally, we add random noise. This approach
+                   turned out to be very efficient, and yielded the best
+                   performance on the Author Obfuscation task at the PAN-2016
+                   competition.",
+  month         =  jul,
+  year          =  2017,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "1707.03736"
+}
+@ARTICLE{Ke2023-nl,
+  title         = "Discriminating Human-authored from {ChatGPT-Generated} Code
+                   Via Discernable Feature Analysis",
+  author        = "Ke, Li and Sheng, Hong and Cai, Fu and Yunhe, Zhang and
+                   Ming, Liu",
+  abstract      = "The ubiquitous adoption of Large Language Generation Models
+                   (LLMs) in programming has underscored the importance of
+                   differentiating between human-written code and code
+                   generated by intelligent models. This paper specifically
+                   aims to distinguish code generated by ChatGPT from that
+                   authored by humans. Our investigation reveals disparities in
+                   programming style, technical level, and readability between
+                   these two sources. Consequently, we develop a discriminative
+                   feature set for differentiation and evaluate its efficacy
+                   through ablation experiments. Additionally, we devise a
+                   dataset cleansing technique, which employs temporal and
+                   spatial segmentation, to mitigate the dearth of datasets and
+                   to secure high-caliber, uncontaminated datasets. To further
+                   enrich data resources, we employ ``code transformation,''
+                   ``feature transformation,'' and ``feature customization''
+                   techniques, generating an extensive dataset comprising
+                   10,000 lines of ChatGPT-generated code. The salient
+                   contributions of our research include: proposing a
+                   discriminative feature set yielding high accuracy in
+                   differentiating ChatGPT-generated code from human-authored
+                   code in binary classification tasks; devising methods for
+                   generating extensive ChatGPT-generated codes; and
+                   introducing a dataset cleansing strategy that extracts
+                   immaculate, high-grade code datasets from open-source
+                   repositories, thus achieving exceptional accuracy in code
+                   authorship attribution tasks.",
+  month         =  jun,
+  year          =  2023,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.SE",
+  eprint        = "2306.14397"
+}
+@ARTICLE{Mahmood2019-wt,
+  title     = "A girl has no name: Automated authorship obfuscation using
+               {Mutant-X}",
+  author    = "Mahmood, Asad and Ahmad, Faizan and Shafiq, Zubair and
+               Srinivasan, Padmini and Zaffar, Fareed",
+  abstract  = "Abstract Stylometric authorship attribution aims to identify an
+               anonymous or disputed document's author by examining its writing
+               style. The development of powerful machine learning based
+               stylometric authorship attribution methods presents a serious
+               privacy threat for individuals such as journalists and activists
+               who wish to publish anonymously. Researchers have proposed
+               several authorship obfuscation approaches that try to make
+               appropriate changes (e.g. word/phrase replacements) to evade
+               attribution while preserving semantics. Unfortunately, existing
+               authorship obfuscation approaches are lacking because they
+               either require some manual effort, require significant training
+               data, or do not work for long documents. To address these
+               limitations, we propose a genetic algorithm based random search
+               framework called Mutant-X which can automatically obfuscate text
+               to successfully evade attribution while keeping the semantics of
+               the obfuscated text similar to the original text. Specifically,
+               Mutant-X sequentially makes changes in the text using mutation
+               and crossover techniques while being guided by a fitness
+               function that takes into account both attribution probability
+               and semantic relevance. While Mutant-X requires black-box
+               knowledge of the adversary's classifier, it does not require any
+               additional training data and also works on documents of any
+               length. We evaluate Mutant-X against a variety of authorship
+               attribution methods on two different text corpora. Our results
+               show that Mutant-X can decrease the accuracy of state-of-the-art
+               authorship attribution methods by as much as 64\% while
+               preserving the semantics much better than existing automated
+               authorship obfuscation approaches. While Mutant-X advances the
+               state-of-the-art in automated authorship obfuscation, we find
+               that it does not generalize to a stronger threat model where the
+               adversary uses a different attribution classifier than what
+               Mutant-X assumes. Our findings warrant the need for future
+               research to improve the generalizability (or transferability) of
+               automated authorship obfuscation approaches.",
+  journal   = "Proc. Priv. Enhancing Technol.",
+  publisher = "Privacy Enhancing Technologies Symposium Advisory Board",
+  volume    =  2019,
+  number    =  4,
+  pages     = "54--71",
+  month     =  oct,
+  year      =  2019,
+  language  = "en"
+}
+@MISC{Mansoorizadeh_undated-rf,
+  title        = "Author obfuscation using {WordNet} and language models
+                  Notebook for {PAN} at {CLEF} 2016",
+  author       = "Mansoorizadeh, Muharram and Rahgooy, Taher and Aminiyan,
+                  Mohammad and Eskandari, Mahdy",
+  howpublished = "\url{https://ceur-ws.org/Vol-1609/16090939.pdf}",
+  note         = "Accessed: 2023-6-16"
+}
+@ARTICLE{Meister2021-tu,
+  title         = "Revisiting the Uniform Information Density Hypothesis",
+  author        = "Meister, Clara and Pimentel, Tiago and Haller, Patrick and
+                   J{\"a}ger, Lena and Cotterell, Ryan and Levy, Roger",
+  abstract      = "The uniform information density (UID) hypothesis posits a
+                   preference among language users for utterances structured
+                   such that information is distributed uniformly across a
+                   signal. While its implications on language production have
+                   been well explored, the hypothesis potentially makes
+                   predictions about language comprehension and linguistic
+                   acceptability as well. Further, it is unclear how uniformity
+                   in a linguistic signal -- or lack thereof -- should be
+                   measured, and over which linguistic unit, e.g., the sentence
+                   or language level, this uniformity should hold. Here we
+                   investigate these facets of the UID hypothesis using reading
+                   time and acceptability data. While our reading time results
+                   are generally consistent with previous work, they are also
+                   consistent with a weakly super-linear effect of surprisal,
+                   which would be compatible with UID's predictions. For
+                   acceptability judgments, we find clearer evidence that
+                   non-uniformity in information density is predictive of lower
+                   acceptability. We then explore multiple operationalizations
+                   of UID, motivated by different interpretations of the
+                   original hypothesis, and analyze the scope over which the
+                   pressure towards uniformity is exerted. The explanatory
+                   power of a subset of the proposed operationalizations
+                   suggests that the strongest trend may be a regression
+                   towards a mean surprisal across the language, rather than
+                   the phrase, sentence, or document -- a finding that supports
+                   a typical interpretation of UID, namely that it is the
+                   byproduct of language users maximizing the use of a
+                   (hypothetical) communication channel.",
+  month         =  sep,
+  year          =  2021,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2109.11635"
+}
+@misc{mitchell2023detectgpt,
+    url = {https://arxiv.org/abs/2301.11305},
+    author = {Mitchell, Eric and Lee, Yoonho and Khazatsky, Alexander and Manning, Christopher D. and Finn, Chelsea},
+    title = {DetectGPT: Zero-Shot Machine-Generated Text Detection using Probability Curvature},
+    publisher = {arXiv},
+    year = {2023},
+}
+@INPROCEEDINGS{Munir2021-yt,
+  title     = "Through the Looking Glass: Learning to Attribute Synthetic Text
+               Generated by Language Models",
+  booktitle = "Proceedings of the 16th Conference of the European Chapter of
+               the Association for Computational Linguistics: Main Volume",
+  author    = "Munir, Shaoor and Batool, Brishna and Shafiq, Zubair and
+               Srinivasan, Padmini and Zaffar, Fareed",
+  abstract  = "Given the potential misuse of recent advances in synthetic text
+               generation by language models (LMs), it is important to have the
+               capacity to attribute authorship of synthetic text. While
+               stylometric organic (i.e., human written) authorship attribution
+               has been quite successful, it is unclear whether similar
+               approaches can be used to attribute a synthetic text to its
+               source LM. We address this question with the key insight that
+               synthetic texts carry subtle distinguishing marks inherited from
+               their source LM and that these marks can be leveraged by machine
+               learning (ML) algorithms for attribution. We propose and test
+               several ML-based attribution methods. Our best attributor built
+               using a fine-tuned version of XLNet (XLNet-FT) consistently
+               achieves excellent accuracy scores (91\% to near perfect 98\%)
+               in terms of attributing the parent pre-trained LM behind a
+               synthetic text. Our experiments show promising results across a
+               range of experiments where the synthetic text may be generated
+               using pre-trained LMs, fine-tuned LMs, or by varying text
+               generation parameters.",
+  publisher = "Association for Computational Linguistics",
+  pages     = "1811--1822",
+  month     =  apr,
+  year      =  2021,
+  address   = "Online"
+}
+
+@ARTICLE{Shetty2017-vz,
+  title         = "{$A^{4}NT$}: Author attribute anonymity by adversarial
+                   training of neural machine translation",
+  author        = "Shetty, Rakshith and Schiele, Bernt and Fritz, Mario",
+  abstract      = "Text-based analysis methods allow to reveal privacy relevant
+                   author attributes such as gender, age and identify of the
+                   text's author. Such methods can compromise the privacy of an
+                   anonymous author even when the author tries to remove
+                   privacy sensitive content. In this paper, we propose an
+                   automatic method, called Adversarial Author Attribute
+                   Anonymity Neural Translation ($A^4NT$), to combat such
+                   text-based adversaries. We combine sequence-to-sequence
+                   language models used in machine translation and generative
+                   adversarial networks to obfuscate author attributes. Unlike
+                   machine translation techniques which need paired data, our
+                   method can be trained on unpaired corpora of text containing
+                   different authors. Importantly, we propose and evaluate
+                   techniques to impose constraints on our $A^4NT$ to preserve
+                   the semantics of the input text. $A^4NT$ learns to make
+                   minimal changes to the input text to successfully fool
+                   author attribute classifiers, while aiming to maintain the
+                   meaning of the input. We show through experiments on two
+                   different datasets and three settings that our proposed
+                   method is effective in fooling the author attribute
+                   classifiers and thereby improving the anonymity of authors.",
+  month         =  nov,
+  year          =  2017,
+  copyright     = "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CR",
+  eprint        = "1711.01921"
+}
+@INPROCEEDINGS{Uchendu2020-nk,
+  title     = "Authorship Attribution for Neural Text Generation",
+  booktitle = "Proceedings of the 2020 Conference on Empirical Methods in
+               Natural Language Processing ({EMNLP})",
+  author    = "Uchendu, Adaku and Le, Thai and Shu, Kai and Lee, Dongwon",
+  abstract  = "In recent years, the task of generating realistic short and long
+               texts have made tremendous advancements. In particular, several
+               recently proposed neural network-based language models have
+               demonstrated their astonishing capabilities to generate texts
+               that are challenging to distinguish from human-written texts
+               with the naked eye. Despite many benefits and utilities of such
+               neural methods, in some applications, being able to tell the
+               ``author'' of a text in question becomes critically important.
+               In this work, in the context of this Turing Test, we investigate
+               the so-called authorship attribution problem in three versions:
+               (1) given two texts T1 and T2, are both generated by the same
+               method or not? (2) is the given text T written by a human or
+               machine? (3) given a text T and k candidate neural methods, can
+               we single out the method (among k alternatives) that generated
+               T? Against one humanwritten and eight machine-generated texts
+               (i.e., CTRL, GPT, GPT2, GROVER, XLM, XLNET, PPLM, FAIR), we
+               empirically experiment with the performance of various models in
+               three problems. By and large, we find that most generators still
+               generate texts significantly different from human-written ones,
+               thereby making three problems easier to solve. However, the
+               qualities of texts generated by GPT2, GROVER, and FAIR are
+               better, often confusing machine classifiers in solving three
+               problems. All codes and datasets of our experiments are
+               available at: https://bit.ly/ 302zWdz",
+  publisher = "Association for Computational Linguistics",
+  pages     = "8384--8395",
+  month     =  nov,
+  year      =  2020,
+  address   = "Online"
+}
+@ARTICLE{Uchendu2021-ed,
+  title         = "{TURINGBENCH}: A Benchmark Environment for Turing Test in
+                   the Age of Neural Text Generation",
+  author        = "Uchendu, Adaku and Ma, Zeyu and Le, Thai and Zhang, Rui and
+                   Lee, Dongwon",
+  abstract      = "Recent progress in generative language models has enabled
+                   machines to generate astonishingly realistic texts. While
+                   there are many legitimate applications of such models, there
+                   is also a rising need to distinguish machine-generated texts
+                   from human-written ones (e.g., fake news detection).
+                   However, to our best knowledge, there is currently no
+                   benchmark environment with datasets and tasks to
+                   systematically study the so-called ``Turing Test'' problem
+                   for neural text generation methods. In this work, we present
+                   the TuringBench benchmark environment, which is comprised of
+                   (1) a dataset with 200K human- or machine-generated samples
+                   across 20 labels \{Human, GPT-1, GPT-2\_small,
+                   GPT-2\_medium, GPT-2\_large, GPT-2\_xl, GPT-2\_PyTorch,
+                   GPT-3, GROVER\_base, GROVER\_large, GROVER\_mega, CTRL, XLM,
+                   XLNET\_base, XLNET\_large, FAIR\_wmt19, FAIR\_wmt20,
+                   TRANSFORMER\_XL, PPLM\_distil, PPLM\_gpt2\}, (2) two
+                   benchmark tasks -- i.e., Turing Test (TT) and Authorship
+                   Attribution (AA), and (3) a website with leaderboards. Our
+                   preliminary experimental results using TuringBench show that
+                   FAIR\_wmt20 and GPT-3 are the current winners, among all
+                   language models tested, in generating the most human-like
+                   indistinguishable texts with the lowest F1 score by five
+                   state-of-the-art TT detection models. The TuringBench is
+                   available at: https://turingbench.ist.psu.edu/",
+  month         =  sep,
+  year          =  2021,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2109.13296"
+}
+@ARTICLE{Uchendu2022-in,
+  title         = "Attribution and Obfuscation of Neural Text Authorship: A
+                   Data Mining Perspective",
+  author        = "Uchendu, Adaku and Le, Thai and Lee, Dongwon",
+  abstract      = "Two interlocking research questions of growing interest and
+                   importance in privacy research are Authorship Attribution
+                   (AA) and Authorship Obfuscation (AO). Given an artifact,
+                   especially a text t in question, an AA solution aims to
+                   accurately attribute t to its true author out of many
+                   candidate authors while an AO solution aims to modify t to
+                   hide its true authorship. Traditionally, the notion of
+                   authorship and its accompanying privacy concern is only
+                   toward human authors. However, in recent years, due to the
+                   explosive advancements in Neural Text Generation (NTG)
+                   techniques in NLP, capable of synthesizing human-quality
+                   open-ended texts (so-called ``neural texts''), one has to
+                   now consider authorships by humans, machines, or their
+                   combination. Due to the implications and potential threats
+                   of neural texts when used maliciously, it has become
+                   critical to understand the limitations of traditional AA/AO
+                   solutions and develop novel AA/AO solutions in dealing with
+                   neural texts. In this survey, therefore, we make a
+                   comprehensive review of recent literature on the attribution
+                   and obfuscation of neural text authorship from a Data Mining
+                   perspective, and share our view on their limitations and
+                   promising research directions.",
+  month         =  oct,
+  year          =  2022,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2210.10488"
+}
+@INPROCEEDINGS{Venkatraman2023-bx,
+  title     = "How do decoding algorithms distribute information in dialogue
+               responses?",
+  booktitle = "Findings of the Association for Computational Linguistics:
+               {EACL} 2023",
+  author    = "Venkatraman, Saranya and He, He and Reitter, David",
+  abstract  = "Humans tend to follow the Uniform Information Density (UID)
+               principle by distributing information evenly in utterances. We
+               study if decoding algorithms implicitly follow this UID
+               principle, and under what conditions adherence to UID might be
+               desirable for dialogue generation. We generate responses using
+               different decoding algorithms with GPT-2 on the Persona-Chat
+               dataset and collect human judgments on their quality using
+               Amazon Mechanical Turk. We find that (i) surprisingly,
+               model-generated responses follow the UID principle to a greater
+               extent than human responses, and (ii) decoding algorithms that
+               promote UID do not generate higher-quality responses. Instead,
+               when we control for surprisal, non-uniformity of information
+               density correlates with the quality of responses with very
+               low/high surprisal. Our findings indicate that encouraging
+               non-uniform responses is a potential solution to the
+               ``likelihood trap'' problem (quality degradation in very
+               high-likelihood text). Our dataset containing multiple candidate
+               responses per dialog history along with human-annotated quality
+               ratings is available at:
+               https://huggingface.co/datasets/saranya132/dialog\_uid\_gpt2.",
+  publisher = "Association for Computational Linguistics",
+  pages     = "953--962",
+  month     =  may,
+  year      =  2023,
+  address   = "Dubrovnik, Croatia"
+}
+@ARTICLE{Zheng2023-pn,
+  title     = "A review on authorship attribution in text mining",
+  author    = "Zheng, Wanwan and Jin, Mingzhe",
+  abstract  = "Abstract The issue of authorship attribution has long been
+               considered and continues to be a popular topic. Because of
+               advances in digital computers, this field has experienced rapid
+               developments in the last decade. In this article, a survey of
+               recent advances in authorship attribution in text mining is
+               presented. This survey focuses on authorship attribution methods
+               that are statistically or computationally supported as opposed
+               to traditional literary approaches. The main aspects covered
+               include the changes in research topics over time, basic feature
+               metrics, machine learning techniques, and the advantages and
+               disadvantages of each approach. Moreover, the corpus size,
+               number of candidates, data imbalance, and result description,
+               all of which pose challenges in authorship attribution, are
+               discussed to inform future work. This article is categorized
+               under: Statistical Learning and Exploratory Methods of the Data
+               Sciences > Text Mining",
+  journal   = "Wiley Interdiscip. Rev. Comput. Stat.",
+  publisher = "Wiley",
+  volume    =  15,
+  number    =  2,
+  month     =  mar,
+  year      =  2023,
+  copyright = "http://onlinelibrary.wiley.com/termsAndConditions\#vor",
+  language  = "en"
+}
+@ARTICLE{Zhai2022-pc,
+  title         = "A Girl Has A Name, And It's ... Adversarial Authorship
+                   Attribution for Deobfuscation",
+  author        = "Zhai, Wanyue and Rusert, Jonathan and Shafiq, Zubair and
+                   Srinivasan, Padmini",
+  abstract      = "Recent advances in natural language processing have enabled
+                   powerful privacy-invasive authorship attribution. To counter
+                   authorship attribution, researchers have proposed a variety
+                   of rule-based and learning-based text obfuscation
+                   approaches. However, existing authorship obfuscation
+                   approaches do not consider the adversarial threat model.
+                   Specifically, they are not evaluated against adversarially
+                   trained authorship attributors that are aware of potential
+                   obfuscation. To fill this gap, we investigate the problem of
+                   adversarial authorship attribution for deobfuscation. We
+                   show that adversarially trained authorship attributors are
+                   able to degrade the effectiveness of existing obfuscators
+                   from 20-30\% to 5-10\%. We also evaluate the effectiveness
+                   of adversarial training when the attributor makes incorrect
+                   assumptions about whether and which obfuscator was used.
+                   While there is a a clear degradation in attribution
+                   accuracy, it is noteworthy that this degradation is still at
+                   or above the attribution accuracy of the attributor that is
+                   not adversarially trained at all. Our results underline the
+                   need for stronger obfuscation approaches that are resistant
+                   to deobfuscation",
+  month         =  mar,
+  year          =  2022,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2203.11849"
+}
+
+@misc{AITextDetector, 
+    month     = Jan,
+    day       = 01,
+    journal   = {AI Text Detector},
+    publisher = {ZeroGPT},
+    url       = "https://www.zerogpt.com", 
+    date      = 2023
+}
